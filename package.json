@@ -1,0 +1,94 @@
+{
+  "name": "repo-cves",
+  "version": "1.0.0",
+  "description": "Package demonstrating known CVEs for security research and testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cve",
+    "vulnerability",
+    "security"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.16.2",
+    "lodash": "4.17.4",
+    "moment": "2.18.1",
+    "request": "2.81.0",
+    "debug": "2.6.8",
+    "underscore": "1.8.3",
+    "async": "2.4.1",
+    "handlebars": "4.0.10"
+  },
+  "devDependencies": {},
+  "cves": {
+    "express": {
+      "version": "4.16.2",
+      "vulnerabilities": [
+        {
+          "id": "CVE-2018-16487",
+          "severity": "high",
+          "description": "Denial of service via large content-length header"
+        }
+      ]
+    },
+    "lodash": {
+      "version": "4.17.4",
+      "vulnerabilities": [
+        {
+          "id": "CVE-2018-16487",
+          "severity": "high",
+          "description": "Prototype pollution vulnerability in merge, mergeWith, and defaultsDeep methods"
+        },
+        {
+          "id": "CVE-2019-10744",
+          "severity": "high",
+          "description": "Prototype pollution in zipObjectDeep"
+        }
+      ]
+    },
+    "moment": {
+      "version": "2.18.1",
+      "vulnerabilities": [
+        {
+          "id": "CVE-2016-10228",
+          "severity": "medium",
+          "description": "Regular expression denial of service (ReDoS)"
+        }
+      ]
+    },
+    "request": {
+      "version": "2.81.0",
+      "vulnerabilities": [
+        {
+          "id": "CVE-2017-16168",
+          "severity": "high",
+          "description": "Regular expression denial of service (ReDoS) in dependency"
+        }
+      ]
+    },
+    "debug": {
+      "version": "2.6.8",
+      "vulnerabilities": [
+        {
+          "id": "CVE-2017-16137",
+          "severity": "medium",
+          "description": "Regular expression denial of service (ReDoS)"
+        }
+      ]
+    },
+    "handlebars": {
+      "version": "4.0.10",
+      "vulnerabilities": [
+        {
+          "id": "CVE-2019-20920",
+          "severity": "medium",
+          "description": "Prototype pollution vulnerability"
+        }
+      ]
+    }
+  }
+}
